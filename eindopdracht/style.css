@@ -15,16 +15,20 @@ main{
     perspective: 30em;
 }
 
-ul{
+ul {
+    list-style-type: none;
+}
+
+ul:nth-of-type(1){
     position: relative;
     list-style-type: none;
     width:var(--width);
 	height:var(--width);
     transform-style:preserve-3d;
-    transform: rotate3d(1,1,1, 45deg);
+    transform: rotate3d(1,1,1, 20deg);
 }
 
-li{
+ul:nth-of-type(1) li{
     position: absolute;
     background-color: red;
     width: 100%;
@@ -33,37 +37,37 @@ li{
 }
 
 /* front */
-li:nth-of-type(1){
+ul:nth-of-type(1) li:nth-of-type(1){
     background-color: green;
     transform: translateZ(calc(var(--width) / 2)); 
 }
 
 /* back */
-li:nth-of-type(2){
+ul:nth-of-type(1) li:nth-of-type(2){
     background-color: yellow;
     transform: translateZ(calc(var(--width) / -2)); 
 }
 
 /* top */
-li:nth-of-type(3){
+ul:nth-of-type(1) li:nth-of-type(3){
     background-color: blue;
     transform: rotateX(.25turn) translateZ(calc(var(--width) / 2)); 
 }
 
 /* bottom */
-li:nth-of-type(4){
+ul:nth-of-type(1) li:nth-of-type(4){
     background-color: purple;
     transform: rotateX(-.25turn) translateZ(calc(var(--width) / 2)); 
 }
 
 /* right */
-li:nth-of-type(5){
+ul:nth-of-type(1) li:nth-of-type(5){
     background-color: pink;
     transform: rotateY(.25turn) translateZ(calc(var(--width) / 2)); 
 }
 
 /* left */
-li:nth-of-type(6){
+ul:nth-of-type(1) li:nth-of-type(6){
     background-color: black;
     transform: rotateY(.25turn) translateZ(calc(var(--width) / -2)); 
 }
