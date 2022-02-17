@@ -66,11 +66,6 @@ main ul li{
     position: absolute;
     transform-style:preserve-3d;
     transition: 1s;
-    transform: translate3d(
-        calc(var(--lengte) * var(--x)), 
-        calc(var(--lengte) * var(--y)), 
-        calc(var(--lengte ) * var(--z))
-        )
 }
 
 main ul li ul {
@@ -141,194 +136,186 @@ main ul li ul li:nth-of-type(6){
 
 /* rechts voor hoek */
 main ul li:nth-of-type(1){
-    --x: 1;
-    --y: -1;
-    --z: 1;
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0) */
+     translate3d(calc(var(--lengte)), calc(var(--lengte) * -1), calc(var(--lengte )))
 }
 
 /* rechts achter hoek */
 main ul li:nth-of-type(2){
-    
-    --x: 1;
-    --y: -1;
-    --z: -1;
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte)), calc(var(--lengte) * -1), calc(var(--lengte) * -1))
 }
 
 /* links voor hoek */
 main ul li:nth-of-type(3){
-   
-    --x: -1;
-    --y: -1;
-    --z: 1;
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * -1), calc(var(--lengte) * -1), calc(var(--lengte )))
 }
 
 /* links achter hoek */
 main ul li:nth-of-type(4){
-    --x: -1;
-    --y: -1;
-    --z: -1;
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * -1), calc(var(--lengte) * -1), calc(var(--lengte ) * -1))
 }
 
 /* links voor onder hoek */
 main ul li:nth-of-type(5){
-    --x: -1;
-    --y: 1;
-    --z: 1;
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * -1), calc(var(--lengte) ), calc(var(--lengte )))
 }
 
 /* rechts voor onder hoek */
 main ul li:nth-of-type(6){
-   
-    --x: 1;
-    --y: 1;
-    --z: 1;
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) ), calc(var(--lengte) ), calc(var(--lengte )))
 }
 
 /* rechts achter onder hoek */
-main ul li:nth-of-type(7){  
-    --x: 1;
-    --y: 1;
-    --z: -1;
+main ul li:nth-of-type(7){
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) ), calc(var(--lengte) ), calc(var(--lengte ) * -1))
 }
 
 /* links achter onder hoek */
 main ul li:nth-of-type(8){
-    --x: -1;
-    --y: 1;
-    --z: -1;
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * -1), calc(var(--lengte) ), calc(var(--lengte ) * -1))
 }
 
 /* Code Boven is voor hoekjes */
 
 /* rechts onder midden */
 main ul li:nth-of-type(9){
-    --x: 1;
-    --y: 1;
-    --z: 0;
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * 1), calc(var(--lengte) ), calc(var(--lengte ) * 0))
 }
 
 /* rechts boven midden */
 main ul li:nth-of-type(10){
-   
-    --x: 1;
-    --y: -1;
-    --z: 0;
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * 1), calc(var(--lengte) * -1 ), calc(var(--lengte ) * 0))
 }
 
 /* links onder midden */
 main ul li:nth-of-type(11){
-    --x: -1;
-    --y: 1;
-    --z: 0;
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * -1), calc(var(--lengte) ), calc(var(--lengte ) * 0))
 }
 
 /* links boven midden */
 main ul li:nth-of-type(12){
-    
-    --x: -1;
-    --y: -1;
-    --z: 0;
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * -1), calc(var(--lengte) * -1 ), calc(var(--lengte ) * 0))
 }
 
 /* voor onder midden */
 main ul li:nth-of-type(13) {
-     --x: 0;
-    --y: 1;
-    --z: 1;
+	transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0) */
+     translate3d(calc(var(--lengte) * 0), calc(var(--lengte) * 1 ), calc(var(--lengte ) * 1));
 }
 
 /* voor midden midden */
 main ul li:nth-of-type(14){
-    --x: 0;
-    --y: 0;
-    --z: 1;
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * 0), calc(var(--lengte) * 0 ), calc(var(--lengte ) * 1));
 }
 
 /* onder midden midden */
 main ul li:nth-of-type(15) {
-	
-    --x: 0;
-    --y: 1;
-    --z: 0;
+	transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * 0), calc(var(--lengte) ), calc(var(--lengte ) * 0));
 }
 
 /* achter onder midden */
 main ul li:nth-of-type(16) {
-    --x: 0;
-    --y: 1;
-    --z: -1;
+	transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * 0), calc(var(--lengte) * 1 ), calc(var(--lengte ) * -1));
 }
 
 /* achter midden midden */
 main ul li:nth-of-type(17){
-    --x: 0;
-    --y: 0;
-    --z: -1;
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * 0), calc(var(--lengte) * 0 ), calc(var(--lengte ) * -1));
 }
 
 /* achter boven midden */
 main ul li:nth-of-type(18){
-    --x: 0;
-    --y: -1;
-    --z: 1;
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * 0), calc(var(--lengte) * -1 ), calc(var(--lengte ) * 01));
 }
 
 /* links achter midden */
 main ul li:nth-of-type(19) {
-    --x: -1;
-    --y: 0;
-    --z: -1;
+	transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * -1), calc(var(--lengte) *0 ), calc(var(--lengte ) * -1));
 }
 
 /*links midden midden */
 main ul li:nth-of-type(20){
-    --x: -1;
-    --y: 0;
-    --z: 0;
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * -1), calc(var(--lengte) * 0 ), calc(var(--lengte ) * 0));
 }
 
 /* links voor midden */
 main ul li:nth-of-type(21) {
-	
-    --x: -1;
-    --y: 0;
-    --z: 1;
+	transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * -1), calc(var(--lengte) * 0 ), calc(var(--lengte ) * 1));
 }
 
 /* rechts achter midden */
 main ul li:nth-of-type(22) {
-    --x: 1;
-    --y: 0;
-    --z: -1;
+	transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * 1), calc(var(--lengte) *0 ), calc(var(--lengte ) * -1));
 }
 
 /* rechts midden midden */
 main ul li:nth-of-type(23){
-    --x: 1;
-    --y: 0;
-    --z: 0;
+    transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * 1), calc(var(--lengte) * 0 ), calc(var(--lengte ) * 0));
 }
 
 /* rechts voor midden */
 main ul li:nth-of-type(24) {
-    --x: 1;
-    --y: 0;
-    --z: 1;
+	transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * 1), calc(var(--lengte) * 0 ), calc(var(--lengte ) * 1));
 }
 
 /* boven midden midden */
 main ul li:nth-of-type(25) {
-	
-    --x: 0;
-    --y: -1;
-    --z: 0;
+	transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * 0), calc(var(--lengte) * -1 ), calc(var(--lengte ) * 0));
 }
 
 /* boven midden achter*/
 main ul li:nth-of-type(26) {
-    --x: 0;
-    --y: -1;
-    --z: -1;
+	transform: 
+    /* rotateX(0) rotateY(0) rotateZ(0)  */
+    translate3d(calc(var(--lengte) * 0), calc(var(--lengte) * -1 ), calc(var(--lengte ) * -1));
 }
 
 
