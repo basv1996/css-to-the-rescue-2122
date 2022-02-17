@@ -137,7 +137,7 @@ main ul li ul li:nth-of-type(6){
     transform: rotateY(-.25turn) translateZ(calc(var(--lengte) / -2))
 }
 
-/* Top Layer */
+/* Hoekjes */
 
 /* rechts voor hoek */
 main ul li:nth-of-type(1){
@@ -169,162 +169,165 @@ main ul li:nth-of-type(4){
     --z: -1;
 }
 
-/* top Midden Achter */
+/* links voor onder hoek */
 main ul li:nth-of-type(5){
-    --x: 0;
-    --y: -1;
-    --z: -1;
-}
-
-/* Top Midden Voor */
-main ul li:nth-of-type(6){
-    --x: 0;
-    --y: -1;
+    --x: -1;
+    --y: 1;
     --z: 1;
 }
 
-/* Top Midden Midden */
-main ul li:nth-of-type(7){  
-    --x: 0;
-    --y: -1;
-    --z: 0;
+/* rechts voor onder hoek */
+main ul li:nth-of-type(6){
+   
+    --x: 1;
+    --y: 1;
+    --z: 1;
 }
 
-/* Top Links Midden */
+/* rechts achter onder hoek */
+main ul li:nth-of-type(7){  
+    --x: 1;
+    --y: 1;
+    --z: -1;
+}
+
+/* links achter onder hoek */
 main ul li:nth-of-type(8){
     --x: -1;
-    --y: -1;
-    --z: 0;
+    --y: 1;
+    --z: -1;
 }
 
-/* Top Midden Rechts */
+/* Code Boven is voor hoekjes */
+
+/* rechts onder midden */
 main ul li:nth-of-type(9){
     --x: 1;
+    --y: 1;
+    --z: 0;
+}
+
+/* rechts boven midden */
+main ul li:nth-of-type(10){
+   
+    --x: 1;
     --y: -1;
     --z: 0;
 }
 
-/* Center Layer */
-
-/* MiddenLayer Rechts midden */
-main ul li:nth-of-type(10){
-    --x: 1;
-    --y: 0;
-    --z: 0;
-}
-
-/* MiddenLayer links Midden */
+/* links onder midden */
 main ul li:nth-of-type(11){
     --x: -1;
-    --y: 0;
+    --y: 1;
     --z: 0;
 }
 
-/* MiddenLayer Rechts Achter */
+/* links boven midden */
 main ul li:nth-of-type(12){
-    --x: 1;
-    --y: 0;
-    --z: -1;
-}
-
-/* MiddenLayer Links achter */
-main ul li:nth-of-type(13) {
+    
     --x: -1;
-    --y: 0;
-    --z: -1;
+    --y: -1;
+    --z: 0;
 }
 
-/* MiddenLayer midden achter */
+/* voor onder midden */
+main ul li:nth-of-type(13) {
+     --x: 0;
+    --y: 1;
+    --z: 1;
+}
+
+/* voor midden midden */
 main ul li:nth-of-type(14){
     --x: 0;
     --y: 0;
-    --z: -1;
-}
-
-/* MiddenLayer Rechts voor */
-main ul li:nth-of-type(15) {
-    --x: 1;
-    --y: 0;
     --z: 1;
 }
 
-/* MiddenLayer midden Voor */
+/* onder midden midden */
+main ul li:nth-of-type(15) {
+	
+    --x: 0;
+    --y: 1;
+    --z: 0;
+}
+
+/* achter onder midden */
 main ul li:nth-of-type(16) {
     --x: 0;
-    --y: 0;
-    --z: 1;
+    --y: 1;
+    --z: -1;
 }
 
-/* MiddenLayer links Voor */
+/* achter midden midden */
 main ul li:nth-of-type(17){
+    --x: 0;
+    --y: 0;
+    --z: -1;
+}
+
+/* achter boven midden */
+main ul li:nth-of-type(18){
+    --x: 0;
+    --y: -1;
+    --z: 1;
+}
+
+/* links achter midden */
+main ul li:nth-of-type(19) {
+    --x: -1;
+    --y: 0;
+    --z: -1;
+}
+
+/*links midden midden */
+main ul li:nth-of-type(20){
+    --x: -1;
+    --y: 0;
+    --z: 0;
+}
+
+/* links voor midden */
+main ul li:nth-of-type(21) {
+	
     --x: -1;
     --y: 0;
     --z: 1;
 }
 
-/* Bottom Layer */
-
-/* BottomLayer Links Achter */
-main ul li:nth-of-type(18){
-    --x: -1;
-    --y: 1;
-    --z: -1;
-}
-
-/* BottomLayer Midden Achter */
-main ul li:nth-of-type(19) {
-    --x: 0;
-    --y: 1;
-    --z: -1;
-}
-
-/* BottomLayer Rechts Achter */
-main ul li:nth-of-type(20){
-    --x: 1;
-    --y: 1;
-    --z: -1;
-}
-
-/* BottomLayer midden rechts */
-main ul li:nth-of-type(21) {
-    --x: 1;
-    --y: 1;
-    --z: 0;
-}
-
-/* BottomLayer Midden Midden */
+/* rechts achter midden */
 main ul li:nth-of-type(22) {
-    --x: 0;
-    --y: 1;
-    --z: 0;
+    --x: 1;
+    --y: 0;
+    --z: -1;
 }
 
-/* BottomLayer midden Links */
+/* rechts midden midden */
 main ul li:nth-of-type(23){
-    --x: -1;
-    --y: 1;
+    --x: 1;
+    --y: 0;
     --z: 0;
 }
 
-/* BottomLayer Links Voor */
+/* rechts voor midden */
 main ul li:nth-of-type(24) {
-    --x: -1;
-    --y: 1;
+    --x: 1;
+    --y: 0;
     --z: 1;
 }
 
-/* BottomLayer midden voor */
+/* boven midden midden */
 main ul li:nth-of-type(25) {
     --x: 0;
-    --y: 1;
-    --z: 1;
+    --y: -1;
+    --z: 0;
 }
 
-/* BottomLayer Rechts Voor */
+/* boven midden achter*/
 main ul li:nth-of-type(26) {
-    --x: 1;
-    --y: 1;
-    --z: 1;
+    --x: 0;
+    --y: -1;
+    --z: -1;
 }
 
 
