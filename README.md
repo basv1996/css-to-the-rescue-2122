@@ -1,46 +1,131 @@
 # CSS to the Rescue @cmda-minor-web 2021 - 2022
 
-Wij vinden het web fascinerend. De laatste jaren is CSS een volwassen en zeer krachtige taal geworden (niet langer een bottleneck - integendeel). Veel van de (nieuwe) **CSS-lekkernijen** worden echter nog niet ten volle benut. Sommige delen van de spec worden onterecht (nog) niet bemind, andere delen zijn zo groot en complex dat we mogelijkheden nog niet hebben doorgrond. Aan jou de mooie opdracht om de onontgonnen delen van de CSS-wereld in kaart te brengen.
+## Inhoudsopgave
 
-**In dit vierweekse vak ga je experimenteren met (voor jou) nieuwe CSS technieken - om daarna/mee een innovatieve, experimentele én aangename ervaring te creëren - met alleen vanilla HTML en vanilla CSS (frameworks, preprocessors, libraries en JavaScript zijn niet toegestaan).**
-
-Goed om te weten: Het experiment wordt gewaardeerd - zelfs/zeker als het niet (helemaal) lukt. Voel je vrij om verder te gaan dan de CSS-technieken die je al beheerst.
-
-## Dingen om vooraf te doen
-- 🔱 **Fork** deze repository.
-- ✅ [**Enroll** je voor de minor via de courselector](https://icthva.sharepoint.com/sites/courseselector#/CourseSelector/web-design-and-development/2021-2022) (dan kun je je werk straks ook op [DLO](https://dlo.mijnhva.nl/d2l/home/324147) opleveren).
-- 📒 **Bekijk** het [programma](https://cmda-minor-web.github.io/css-to-the-rescue-2122/files/CSSttR-2122-Kick-off.pdf) (pdf 48MB), [het quizje](https://cmda-minor-web.github.io/css-to-the-rescue-2122/files/CSSttR-2122-Quizje.pdf) (pdf 2MB) en de [kennismakingsoefening](https://cmda-minor-web.github.io/css-to-the-rescue-2122/docs/oefening.html) alvast even.
-
-## Opdrachten
-Het vak bestaat uit:
-- [Een kennismakingsoefening](https://cmda-minor-web.github.io/css-to-the-rescue-2122/oefening.html)
-- [De eindopdracht](https://cmda-minor-web.github.io/css-to-the-rescue-2122/index.html)
-
-De [beoordelingscriteria voor de eindopdracht](https://cmda-minor-web.github.io/css-to-the-rescue-2122/beoordelingsformulier.html) op een rijte.
-
-## Themasessies
-Schrijf je in het [CSSttR channel](https://teams.microsoft.com/l/channel/19%3a1261f148f4a14a788c98784a96d361c4%40thread.tacv2/03%2520-%2520CSS%2520to%2520the%2520Rescue?groupId=36b2af3f-d616-4e89-b714-f45196f2a6ad&tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7) bij 'Files' in de 'Indeling en Planning' Excel in voor zowel woensdag als donderdag in voor een themasessie naar je keuze (1 per dag):
-- [Materiaal voor de themasessies](https://cmda-minor-web.github.io/css-to-the-rescue-2122/themas.html)
-
-## Programma
-Het vak beslaat 4 weken. Bekijk de [kick-off presentatie](https://cmda-minor-web.github.io/css-to-the-rescue-2122/files/CSSttR-2122-Kick-off.pdf) (pdf 48MB). 
-
-In Teams vind je het [CSSttR channel](https://teams.microsoft.com/l/channel/19%3a1261f148f4a14a788c98784a96d361c4%40thread.tacv2/03%2520-%2520CSS%2520to%2520the%2520Rescue?groupId=36b2af3f-d616-4e89-b714-f45196f2a6ad&tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7) bij 'Files' de Excel met de 'Indeling en Planning'. Daar schrijf je je ook in voor themasessies en het eindgesprek.
-
-Colleges, lessen en gesprekken vinden plaats in het TTH (4e verdieping :-).
-
-## Docenten
-- Vasilis van Gemert
-- Sanne 't Hooft
-
-## Leerdoelen
-- Je kunt experimenteren met (voor jou) nieuwe css-technieken - om de mogelijkheden op waarde te schatten en te gebruiken waar gepast.
-- Je hebt begrip van de volle kracht en mogelijkheden van CSS. Je laat zien dat CSS meer kan dan allen web pages 'stylen'.
-- Je hebt begrip van de interactie-technieken van CSS (en HTML). De UX is aangenaam bruikbaar binnen de gekozen context(en).
-- Je hebt begrip hoe progressive enhancement elegant toe te passen. Je laat zien dat je cascade, inheritance en specificity kunt toepassen.
+- [Week 1](#week-1)
+- [Week 2](#week-2)
+- [Week 3](#week-3)
+- [Week 4](#week-4)
+- [Bronnen](#bronnen)
 
 
-## De Selector First CSS & No JS aanpak
-Het **eerste uitgangspunt** is dat je *geen* ID's en classes gebruikt. Niet omdat ze niet nuttig zijn, maar om te oefenen met de [vele CSS selectoren](https://css-tricks.com/almanac/) die je tot je beschikking hebt. ID's mag je alleen gebruiken om de :target selector te triggeren en uiteraard om labels te koppelen aan inputs. En als het echt echt echt niet anders kan, heb je permissie om een enkele class toe te voegen.
+### Het eindresultaat
 
-Een **tweede uitgangspunt** is dat je *geen* JavaScript gebruikt. Als iets niet kan met CSS, dan zal je iets anders moeten verzinnen om te maken. We onderzoeken de mogelijkheden van CSS in dit vak, en niet die van JS.
+![Screenshot van de kubus]()
+
+> Een kubus 
+
+### Opdracht
+
+- **Gekozen opdracht**: Rubik's Cube
+- **Grootste uitdaging**: Alles werkend krijgen met alleen CSS
+
+### Technieken
+
+- Custom Properties
+- Transform/Animation
+- Calc
+- Min/Max & Clamp
+- Mixing blend modes
+- Linear gradients
+- Flexbox
+- Grid
+- Quantity Queries
+
+### Schetsen
+
+![Eerste afbeelding met schetsen]()
+![Tweede afbeelding met schetsen]()
+
+## Week 1
+
+![Screenshot van week 1]()
+
+In week 1 heb ik 1 kubus gemaakt die in het midden van de pagina stond. Dit waren 6 list items en deze moest ik positioneren dat de 6 vlakken een kubus vormde. 
+Nadat Dit was gelukt heb ik hulp gevraagd over het positioneren van de kubussen er omheen. Hierbij heb ik hulp gekregen en heb ik 26 blokjes om de middelste kubus heen gebouwd.
+
+Ik heb verschillende tips gekregen van Sanne voor het maken van de kubus:
+
+* Eerst Roteren daarna translate
+* Je hebt 3x een transform nodig
+* 1 Voor de hoeken
+* 1 voor de middenstukken
+* 1 voor het midden midden
+* Custom Properties zijn je beste vriend 
+
+
+## Week 2
+
+![Screenshot van week 2]()
+
+
+
+
+### Wat ging goed
+
+- lorem
+- lorem
+
+
+### Waar had ik moeite mee
+
+- lorem
+- lorem
+
+
+### Mislukte plannen
+
+- lorem
+- lorem
+
+
+
+
+
+## Week 3
+
+
+
+### Wat ging goed
+
+- lorem
+- lorem
+
+
+### Waar had ik moeite mee
+
+- lorem
+- lorem
+
+
+### Mislukte plannen
+
+- lorem
+- lorem
+
+## Week 4
+
+
+
+### Wat ging goed
+
+- lorem
+- lorem
+
+
+### Waar had ik moeite mee
+
+- lorem
+- lorem
+
+
+### Mislukte plannen
+
+- lorem
+- lorem
+
+
+
+
+## Bronnen
+

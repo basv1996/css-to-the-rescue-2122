@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-:root {
+:root * {
     --lengte: 6em;
     --rood: #b90000;
     --blauw: #0045ad;
@@ -11,6 +11,7 @@
     --geel: #ffd500;
     --groen: #009b48;
     --oranje: #ff5900;
+    --transform: rotateX(0) rotateY(var(--rY, 0deg)) rotateZ(0);
 }
 
 @keyframes draaien {
@@ -56,10 +57,11 @@ main > ul {
 	place-items: center;
 	height: 100vh;
 	transform-style: preserve-3d;
+    
 	/* perspective: 30em; */
 	transform: rotate3d(1,1,1,30deg);
-    /* animation: draaien 30s linear infinite;
-    animation-play-state: paused; */
+    animation: draaien 30s linear infinite;
+    animation-play-state: paused;
 }
 
 main ul li{
@@ -76,10 +78,19 @@ main ul li{
 main ul li ul {
     /* position: absolute; */
     list-style-type: none;
+    transition: 1s;
     width:var(--lengte);
 	height:var(--lengte);
     transform-style:preserve-3d;
     transform: rotate3d(1,1,1, 0deg);
+
+    transform: 
+    rotateY(var(--rotateY, 0)) 
+    rotateX(var(--rotateX, 0)) 
+    rotateZ(var(--rotateZ, 0)) 
+    translateX(calc(var(--x) *var(--lengte)* 0)) 
+    translateY(calc(var(--y) *var(--lengte)* 0)) 
+    translateZ(calc(var(--z) *var(--lengte)* 0))
    
 }
 
@@ -90,13 +101,7 @@ main ul li ul li {
     width: 100%;
     transition: 1s;
     /* opacity: .5; */
-    transform: 
-    rotateY(var(--rotateY, 0)) 
-    rotateX(var(--rotateX, 0)) 
-    rotateZ(var(--rotateZ, 0)) 
-    translateX(calc(var(--x, 0)*var(--size)*var(--explode))) 
-    translateY(calc(var(--y)*var(--size)*var(--explode))) 
-    translateZ(calc(var(--z)*var(--size)*var(--explode)))
+   
 }
 
 /* Front */
@@ -386,8 +391,34 @@ li:nth-of-type(1)::before {
     border-radius: calc(var(--lengte) / 30);
   }
 
-  main > ul:hover > li:nth-of-type(1)   {
+  /* main > ul:hover > li:nth-of-type(1)   {
 	transform: 
     rotateX(0turn) rotateY(.25turn) rotateZ(0) 
     translate3d(calc(var(--lengte) * -1), calc(var(--lengte) * -1), calc(var(--lengte )))
+} */
+
+/* main > ul li:nth-of-type(-n +9) ul{
+    transform-origin: 
+    calc(var(--lengte) * .5) 
+    calc(var(--lengte) * .5);
+} */
+
+/* main > ul:hover li:nth-of-type(-n +9) ul     */
+main input:nth-of-type(4):checked~ul li:nth-of-type(-n +9) ul
+{
+	
+    transform: rotateX(0) rotateY(.25turn) rotateZ(0);
+}
+
+
+main input:nth-of-type(5):checked~ul li:nth-of-type(-n +9) ul
+{
+	
+    transform: rotateX(0) rotateY(-.25turn) rotateZ(0);
+}
+
+main input:nth-of-type(6):checked~ul li:nth-of-type(5n +3) ul
+{
+	
+    transform: rotateX(.25turn) rotateY(0turn) rotateZ(0turn);
 }
