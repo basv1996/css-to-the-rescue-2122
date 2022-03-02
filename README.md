@@ -39,7 +39,7 @@
 
 ## Week 1
 
-![Screenshot van week 1](https://github.com/basv1996/css-to-the-rescue-2122/tree/main/docs/img/wiki_img/Schets_kubus_layout_week1.png)
+![Screenshot van week 1](https://github.com/basv1996/css-to-the-rescue-2122/blob/main/docs/img/wiki_img/Schets_kubus_layout_week1.png?raw=true)
 
 In week 1 heb ik 1 kubus gemaakt die in het midden van de pagina stond. Dit waren 6 list items en deze moest ik positioneren dat de 6 vlakken een kubus vormde. 
 Nadat Dit was gelukt heb ik hulp gevraagd over het positioneren van de kubussen er omheen. Hierbij heb ik hulp gekregen en heb ik 26 blokjes om de middelste kubus heen gebouwd.
@@ -84,28 +84,25 @@ Niks gedaan
 
 ## Week 3
 
+![Kubus animation week 3](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Cube_animation_week3.gif)
+
 Het is de week na de vakantie week 3. Ik ben weer verder gegaan met de kubus. Aangezien ik voor de vakantie vast liep met het draaien van een zijvlak heb ik mijn code gerefactord. Hierbij heb ik de kubus opnieuw opgedeeld in lagen. Hierbij heb ik ervoor gezorgd dat bijvoorbeeld alle nummers van de tafel van 3 aan de rechterkant van de kubus zitten.
-
-
-
 
 
 ### Wat ging goed
 
-- 
-- lorem
+- Door het refactoren van de code kan ik nmu ook de zijkant draaien
 
 
 ### Waar had ik moeite mee
 
-- lorem
-- lorem
+- Het opnieuw schrijven van de code
+- Nieuwe dingen te bedenken om toe te voegen aan de kubus
 
 
 ### Mislukte plannen
 
-- lorem
-- lorem
+- niks, gelukkig maar
 
 ## Week 4
 
