@@ -56,7 +56,7 @@ Ik heb verschillende tips gekregen van Sanne voor het maken van de kubus:
 
 ## Week 2
 
-![](https://github.com/basv1996/css-to-the-rescue-2122/tree/main/docs/img/wiki_img/Schets_kubus_layout_week2.png)
+![Screenshot van week 2](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Schets_kubus_layout_week2.png)
 
 In week 2 ben ik verder gegaan met de animatie. Hierbij heb ik checkboxxen gebruik om hier interactie met de kubus op uit te oefenen. Ook is het gelukt om een layer van de kubus een kwartslag te draaien. Dit werkt nog niet helemaal smooth. Alle blokken aan de bovenkant draaien tegelijkertijd waardoor dit een heel raar effect met zich mee geeft. Hier moet ik nog naar kijken hoe ik dit kan verhelpen.
 
