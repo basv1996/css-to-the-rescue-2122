@@ -38,17 +38,15 @@ main input {
 main input:first-of-type:checked~ul{
     animation-play-state: running;
 }
-
-    /* Easy Mode */
-main input:nth-of-type(2):checked ~ ul li ul li::before 
-{
-        background-color: var(--blauw);
-    }
-
- /* Change lines to transparent (theme) */
-main input:nth-of-type(3):checked ~ ul li ul li{
-    background-color: #fff3;
+s
+    /* Change lines to White (theme) */
+main input:nth-of-type(2):checked~ul li {
+    background-color: #cecece;
 }
+
+/* main input:nth-of-type(3):checked ~ ul li ul li{
+    background-color: #f004;
+} */
 
 
 
@@ -146,85 +144,85 @@ main ul li ul li:nth-of-type(6){
 
 /* Top Layer */
 
-/* Boven Links achter hoek */
+/* rechts voor hoek */
 main ul li:nth-of-type(1){
-    --x: -1;
+    --x: 1;
     --y: -1;
-    --z: -1;
+    --z: 1;
 }
 
-/* Boven midden achter  */
+/* rechts achter hoek */
 main ul li:nth-of-type(2){
-    --x: 0;
-    --y: -1;
-    --z: -1;
-}
-
-/* Boven rechts achter hoek */
-main ul li:nth-of-type(3){     
+    
     --x: 1;
     --y: -1;
     --z: -1;
 }
 
-/* Boven links midden */
+/* links voor hoek */
+main ul li:nth-of-type(3){
+   
+    --x: -1;
+    --y: -1;
+    --z: 1;
+}
+
+/* links achter hoek */
 main ul li:nth-of-type(4){
     --x: -1;
     --y: -1;
-    --z: 0;
+    --z: -1;
 }
 
-/* Boven Midden Midden */
+/* top Midden Achter */
 main ul li:nth-of-type(5){
     --x: 0;
     --y: -1;
-    --z: 0;
+    --z: -1;
 }
 
-/* Boven midden rechts */
+/* Top Midden Voor */
 main ul li:nth-of-type(6){
-    --x: 1;
-    --y: -1;
-    --z: 0;
-}
-
-
-/* Boven links voor */
-main ul li:nth-of-type(7){  
-     --x: -1;
-    --y: -1;
-    --z: 1;
-}
-
-
-/* Boven midden voor */
-main ul li:nth-of-type(8){
     --x: 0;
     --y: -1;
     --z: 1;
 }
 
-/* Top Voor Rechts */
+/* Top Midden Midden */
+main ul li:nth-of-type(7){  
+    --x: 0;
+    --y: -1;
+    --z: 0;
+}
+
+/* Top Links Midden */
+main ul li:nth-of-type(8){
+    --x: -1;
+    --y: -1;
+    --z: 0;
+}
+
+/* Top Midden Rechts */
 main ul li:nth-of-type(9){
     --x: 1;
     --y: -1;
-    --z: 1;
+    --z: 0;
 }
 
 /* Center Layer */
 
-/* MiddenLayer Links Achter */
+/* MiddenLayer Rechts midden */
 main ul li:nth-of-type(10){
-    --x: -1;
+    --x: 1;
     --y: 0;
-    --z: -1;
+    --z: 0;
 }
 
-/* MiddenLayer Midden Midden */
+/* MiddenLayer links Midden */
 main ul li:nth-of-type(11){
-    --x: 0;
+    --x: -1;
     --y: 0;
-    --z: -1;
+    --z: 0;
 }
 
 /* MiddenLayer Rechts Achter */
@@ -234,44 +232,37 @@ main ul li:nth-of-type(12){
     --z: -1;
 }
 
-/* MiddenLayer Links midden */
+/* MiddenLayer Links achter */
 main ul li:nth-of-type(13) {
     --x: -1;
     --y: 0;
-    --z: 0;
+    --z: -1;
 }
 
-/* MiddenLayer midden midden */
+/* MiddenLayer midden achter */
 main ul li:nth-of-type(14){
     --x: 0;
     --y: 0;
-    --z: 0;
+    --z: -1;
 }
 
-/* MiddenLayer midden Rechts */
+/* MiddenLayer Rechts voor */
 main ul li:nth-of-type(15) {
     --x: 1;
-    --y: 0;
-    --z: 0;
-}
-
-/* MiddenLayer links Voor */
-main ul li:nth-of-type(16) {
-    --x: -1;
     --y: 0;
     --z: 1;
 }
 
-/* MiddenLayer Midden Voor */
-main ul li:nth-of-type(17){
+/* MiddenLayer midden Voor */
+main ul li:nth-of-type(16) {
     --x: 0;
     --y: 0;
     --z: 1;
 }
 
-/* MiddenLayer Rechts Voor */
-main ul li:nth-of-type(18){
-    --x: 1;
+/* MiddenLayer links Voor */
+main ul li:nth-of-type(17){
+    --x: -1;
     --y: 0;
     --z: 1;
 }
@@ -279,64 +270,63 @@ main ul li:nth-of-type(18){
 /* Bottom Layer */
 
 /* BottomLayer Links Achter */
-main ul li:nth-of-type(19){
+main ul li:nth-of-type(18){
     --x: -1;
     --y: 1;
     --z: -1;
 }
 
 /* BottomLayer Midden Achter */
-main ul li:nth-of-type(20) {
+main ul li:nth-of-type(19) {
     --x: 0;
     --y: 1;
     --z: -1;
 }
 
 /* BottomLayer Rechts Achter */
-main ul li:nth-of-type(21){
+main ul li:nth-of-type(20){
     --x: 1;
     --y: 1;
     --z: -1;
 }
 
-/* BottomLayer midden links */
-main ul li:nth-of-type(22) {
-    
-    --x: -1;
+/* BottomLayer midden rechts */
+main ul li:nth-of-type(21) {
+    --x: 1;
     --y: 1;
     --z: 0;
 }
 
 /* BottomLayer Midden Midden */
-main ul li:nth-of-type(23) {
+main ul li:nth-of-type(22) {
     --x: 0;
     --y: 1;
     --z: 0;
 }
 
-/* BottomLayer midden rechts */
-main ul li:nth-of-type(24){
-   --x: 1;
+/* BottomLayer midden Links */
+main ul li:nth-of-type(23){
+    --x: -1;
     --y: 1;
     --z: 0;
 }
 
 /* BottomLayer Links Voor */
-main ul li:nth-of-type(25) {
+main ul li:nth-of-type(24) {
     --x: -1;
     --y: 1;
     --z: 1;
 }
 
 /* BottomLayer midden voor */
-main ul li:nth-of-type(26) {
+main ul li:nth-of-type(25) {
     --x: 0;
     --y: 1;
     --z: 1;
 }
 
 /* BottomLayer Rechts Voor */
-main ul li:nth-of-type(27) {
+main ul li:nth-of-type(26) {
     --x: 1;
     --y: 1;
     --z: 1;
@@ -427,7 +417,7 @@ main input:nth-of-type(5):checked~ul li:nth-of-type(-n +9) ul
     transform: rotateX(0) rotateY(-.25turn) rotateZ(0);
 }
 
-main input:nth-of-type(6):checked~ul li:nth-of-type(3n +3) ul
+main input:nth-of-type(6):checked~ul li:nth-of-type(5n +3) ul
 {
 	
     transform: rotateX(.25turn) rotateY(0turn) rotateZ(0turn);
