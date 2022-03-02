@@ -34,8 +34,8 @@
 
 ### Schetsen
 
-![Eerste afbeelding met schetsen]()
-![Tweede afbeelding met schetsen]()
+![Eerste afbeelding met schetsen](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Schets_week1.png)
+![Tweede afbeelding met schetsen](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Schets2_week1.png)
 
 ## Week 1
 
@@ -92,7 +92,6 @@ Het is de week na de vakantie week 3. Ik ben weer verder gegaan met de kubus. Aa
 ### Wat ging goed
 
 - Door het refactoren van de code kan ik nmu ook de zijkant draaien
-
 
 ### Waar had ik moeite mee
 
