@@ -39,7 +39,7 @@
 
 ## Week 1
 
-![Screenshot van week 1] (https://github.com/basv1996/css-to-the-rescue-2122/tree/main/docs/img/wiki_img/Schets_kubus_layout_week1.png)
+![Screenshot van week 1](https://github.com/basv1996/css-to-the-rescue-2122/tree/main/docs/img/wiki_img/Schets_kubus_layout_week1.png)
 
 In week 1 heb ik 1 kubus gemaakt die in het midden van de pagina stond. Dit waren 6 list items en deze moest ik positioneren dat de 6 vlakken een kubus vormde. 
 Nadat Dit was gelukt heb ik hulp gevraagd over het positioneren van de kubussen er omheen. Hierbij heb ik hulp gekregen en heb ik 26 blokjes om de middelste kubus heen gebouwd.
@@ -56,7 +56,7 @@ Ik heb verschillende tips gekregen van Sanne voor het maken van de kubus:
 
 ## Week 2
 
-![Screenshot van week 2] (https://github.com/basv1996/css-to-the-rescue-2122/tree/main/docs/img/wiki_img/Schets_kubus_layout_week2.png)
+![](https://github.com/basv1996/css-to-the-rescue-2122/tree/main/docs/img/wiki_img/Schets_kubus_layout_week2.png)
 
 In week 2 ben ik verder gegaan met de animatie. Hierbij heb ik checkboxxen gebruik om hier interactie met de kubus op uit te oefenen. Ook is het gelukt om een layer van de kubus een kwartslag te draaien. Dit werkt nog niet helemaal smooth. Alle blokken aan de bovenkant draaien tegelijkertijd waardoor dit een heel raar effect met zich mee geeft. Hier moet ik nog naar kijken hoe ik dit kan verhelpen.
 
