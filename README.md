@@ -84,7 +84,7 @@ Niks gedaan
 
 ## Week 3
 
-![Kubus animation week 3](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Kubus_animation_week3.gif)
+![Kubus animation week 3](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Kubus-animation-week3.gif)
 
 Het is de week na de vakantie week 3. Ik ben weer verder gegaan met de kubus. Aangezien ik voor de vakantie vast liep met het draaien van een zijvlak heb ik mijn code gerefactord. Hierbij heb ik de kubus opnieuw opgedeeld in lagen. Hierbij heb ik ervoor gezorgd dat bijvoorbeeld alle nummers van de tafel van 3 aan de rechterkant van de kubus zitten.
 
