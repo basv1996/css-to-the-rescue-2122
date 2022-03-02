@@ -34,8 +34,8 @@
 
 ### Schetsen
 
-![Eerste afbeelding met schetsen](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Schets_week1.png)
-![Tweede afbeelding met schetsen](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Schets2_week1.png)
+![Eerste afbeelding met schetsen](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Schets_week1.jpg)
+![Tweede afbeelding met schetsen](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Schets2_week1.jpg)
 
 ## Week 1
 
