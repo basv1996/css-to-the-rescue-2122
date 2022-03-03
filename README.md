@@ -98,14 +98,20 @@ Niks gedaan
 
 ## Week 3
 
+### Dag 1
 ![Kubus animation week 3](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Kubus-animation-week3.gif)
+
+### Dag 2
+![Kubus animation week 3](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/KubusWeek3_dag2.gif)
+
+
 
 Het is de week na de vakantie week 3. Ik ben weer verder gegaan met de kubus. Aangezien ik voor de vakantie vast liep met het draaien van een zijvlak heb ik mijn code gerefactord. Hierbij heb ik de kubus opnieuw opgedeeld in lagen. Hierbij heb ik ervoor gezorgd dat bijvoorbeeld alle nummers van de tafel van 3 aan de rechterkant van de kubus zitten.
 
 
 ### Wat ging goed
 
-- Door het refactoren van de code kan ik nmu ook de zijkant draaien
+- Door het refactoren van de code kan ik nu ook de zijkant draaien
 
 
 ### Waar had ik moeite mee
@@ -113,11 +119,13 @@ Het is de week na de vakantie week 3. Ik ben weer verder gegaan met de kubus. Aa
 - Het opnieuw schrijven van de code
 - Nieuwe dingen te bedenken om toe te voegen aan de kubus
 - een afbeelding op 1 van de zijdes van de kubus te krijgen
+- de afbeelding goed mee te laten draaien als een zijde van de kubus draait
 
 
 ### Mislukte plannen
 
 - De afbeelding mee te laten roteren met de kubus
+- grid toe te voegen voor de pijlen rond om de kubus heen
 
 ## Week 4
 

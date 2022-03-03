@@ -55,6 +55,7 @@ main input:nth-of-type(3):checked ~ ul li ul li{
 
 /* Cube Container  */
 main > ul {
+    position: absolute;
 	display: grid;
 	place-items: center;
 	height: 100vh;
@@ -494,10 +495,10 @@ main ul li:nth-child(27) ul li:first-of-type::before{
 
 /* Arrows around the cube */
 
-main section:first-of-type {
+main {
     display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(5, 1fr);
+grid-template-columns: 1fr var(--lengte) var(--lengte) var(--lengte) 1fr;
+grid-template-rows: 1fr var(--lengte) var(--lengte) var(--lengte) 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px; 
 height: 100vh;
@@ -507,27 +508,43 @@ justify-items: center;
 align-items: center;
 }
 
-main section:first-of-type input {
+main input {
     opacity: 0;
 }
 
+/* Cube placement in fgrid on the main */
+
+main ul:first-of-type {
+    background-color:red;
+}
+
 /* Top arrows */
-main section:first-of-type label:nth-of-type(1) { grid-area: 1 / 2 / 2 / 3; }
-main section:first-of-type label:nth-of-type(2) { grid-area: 1 / 3 / 2 / 4; }
-main section:first-of-type label:nth-of-type(3) { grid-area: 1 / 4 / 2 / 5; }
+main label:nth-of-type(1) { grid-area: 1 / 2 / 2 / 3; }
+main label:nth-of-type(2) { grid-area: 1 / 3 / 2 / 4; }
+main label:nth-of-type(3) { grid-area: 1 / 4 / 2 / 5; }
 
 /* Right arrows */
-main section:first-of-type label:nth-of-type(4) { grid-area: 2 / 5 / 3 / 6; }
-main section:first-of-type label:nth-of-type(5) { grid-area: 3 / 5 / 4 / 6; }
-main section:first-of-type label:nth-of-type(6) { grid-area: 4 / 5 / 5 / 6; }
+main label:nth-of-type(4) { grid-area: 2 / 5 / 3 / 6; }
+main label:nth-of-type(5) { grid-area: 3 / 5 / 4 / 6; }
+main label:nth-of-type(6) { grid-area: 4 / 5 / 5 / 6; }
 
 /* Bottom arrows */
-main section:first-of-type label:nth-of-type(7) { grid-area: 5 / 4 / 6 / 5;; }
-main section:first-of-type label:nth-of-type(8) { grid-area: 5 / 3 / 6 / 4; }
-main section:first-of-type label:nth-of-type(9) { grid-area: 5 / 2 / 6 / 3; }
+main label:nth-of-type(7) { grid-area: 5 / 4 / 6 / 5; }
+main label:nth-of-type(8) { grid-area: 5 / 3 / 6 / 4; }
+main label:nth-of-type(9) { grid-area: 5 / 2 / 6 / 3; }
 
 /* Left arrows */
-main section:first-of-type label:nth-of-type(10) { grid-area: 4 / 1 / 5 / 2; }
-main section:first-of-type label:nth-of-type(11) { grid-area: 3 / 1 / 4 / 2; }
-main section:first-of-type label:nth-of-type(12) { grid-area: 2 / 1 / 3 / 2; }
+main label:nth-of-type(10) { grid-area: 4 / 1 / 5 / 2; }
+main label:nth-of-type(11) { grid-area: 3 / 1 / 4 / 2; }
+main label:nth-of-type(12) { grid-area: 2 / 1 / 3 / 2; }
  
+
+/* Arrows functionality */
+
+/* main section:first-of-type input[type="radio"]:nth-of-type(4) */
+
+section #right-top:checked ~ main ul li:nth-of-type(-n +9)
+{
+	
+    transform: rotateX(0) rotateY(.25turn) rotateZ(0);
+}
