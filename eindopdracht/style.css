@@ -413,6 +413,9 @@ li:nth-of-type(1)::before {
     calc(var(--lengte) * .5);
 } */
 
+
+/* The buttons for the cube */
+
 /* main > ul:hover li:nth-of-type(-n +9) ul     */
 main input:nth-of-type(4):checked~ul li:nth-of-type(-n +9) ul
 {
@@ -432,3 +435,99 @@ main input:nth-of-type(6):checked~ul li:nth-of-type(3n +3) ul
 	
     transform: rotateX(.25turn) rotateY(0turn) rotateZ(0turn);
 }
+
+
+
+/* Image background on one side */
+
+/* front and top layer */
+main ul li:nth-child(n+7):nth-child(-n+9) ul li:first-of-type::before,
+main ul li:nth-child(n+16):nth-child(-n+18) ul li:first-of-type::before,
+main ul li:nth-child(n+25):nth-child(-n+27) ul li:first-of-type::before{
+    /* background-color: transparent; */
+}
+
+/* Afbeelding moet 3x zo groot zijn voor de kubus */
+
+main input:nth-of-type(7):checked~ ul > li > ul > li:first-of-type::before{
+    background-image: url(assets/dogeCoin.jpg);
+    background-size: calc(var(--lengte)*3) calc(var(--lengte)*3);
+    /* background-position: center center; */
+}
+
+main ul li:nth-child(7) ul li:first-of-type::before{
+    background-position: top left;
+}
+
+main ul li:nth-child(8) ul li:first-of-type::before{
+    background-position: center top;
+}
+
+main ul li:nth-child(9) ul li:first-of-type::before{
+    background-position: right top;
+}
+
+main ul li:nth-child(16) ul li:first-of-type::before{
+    background-position: center left;
+}
+
+main ul li:nth-child(17) ul li:first-of-type::before{
+    background-position: center center;
+}
+
+main ul li:nth-child(18) ul li:first-of-type::before{
+    background-position: right center;
+}
+
+main ul li:nth-child(25) ul li:first-of-type::before{
+    background-position: bottom left;
+}
+
+main ul li:nth-child(26) ul li:first-of-type::before{
+    background-position: center bottom;
+}
+
+main ul li:nth-child(27) ul li:first-of-type::before{
+    background-position: right bottom;
+}
+
+
+/* Arrows around the cube */
+
+main section:first-of-type {
+    display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px; 
+height: 100vh;
+width: 100vw;
+position: absolute;
+justify-items: center;
+align-items: center;
+}
+
+main section:first-of-type input {
+    opacity: 0;
+}
+
+/* Top arrows */
+main section:first-of-type label:nth-of-type(1) { grid-area: 1 / 2 / 2 / 3; }
+main section:first-of-type label:nth-of-type(2) { grid-area: 1 / 3 / 2 / 4; }
+main section:first-of-type label:nth-of-type(3) { grid-area: 1 / 4 / 2 / 5; }
+
+/* Right arrows */
+main section:first-of-type label:nth-of-type(4) { grid-area: 2 / 5 / 3 / 6; }
+main section:first-of-type label:nth-of-type(5) { grid-area: 3 / 5 / 4 / 6; }
+main section:first-of-type label:nth-of-type(6) { grid-area: 4 / 5 / 5 / 6; }
+
+/* Bottom arrows */
+main section:first-of-type label:nth-of-type(7) { grid-area: 5 / 4 / 6 / 5;; }
+main section:first-of-type label:nth-of-type(8) { grid-area: 5 / 3 / 6 / 4; }
+main section:first-of-type label:nth-of-type(9) { grid-area: 5 / 2 / 6 / 3; }
+
+/* Left arrows */
+main section:first-of-type label:nth-of-type(10) { grid-area: 4 / 1 / 5 / 2; }
+main section:first-of-type label:nth-of-type(11) { grid-area: 3 / 1 / 4 / 2; }
+main section:first-of-type label:nth-of-type(12) { grid-area: 2 / 1 / 3 / 2; }
+ 

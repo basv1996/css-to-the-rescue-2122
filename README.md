@@ -25,14 +25,13 @@
 - Custom Properties
 - Transform/Animation
 - Calc
-- Min/Max & Clamp
-- Mixing blend modes
-- Linear gradients
 - Flexbox
 - Grid
 - Quantity Queries
 
 ### Schetsen
+
+Aangezien ik niet een heel goed idee had hoe ik moest beginnen aan deze opdracht heb ik een schets gemaakt hoe ik mijn HTML wil gaan opbouwen. Om het semantisch correct te  houden heb ik ervoor gekozen om list items te gebruiken voor m'n kubus blokken.
 
 ![Eerste afbeelding met schetsen](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Schets_week1.jpg)
 ![Tweede afbeelding met schetsen](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Schets2_week1.jpg)
@@ -52,6 +51,21 @@ Ik heb verschillende tips gekregen van Sanne voor het maken van de kubus:
 * 1 voor de middenstukken
 * 1 voor het midden midden
 * Custom Properties zijn je beste vriend 
+
+
+### Wat ging goed
+
+- Het is gelukt om 1 kleine kubus te maken
+- voor het eerst 3d animatie gemaakt
+
+### Waar had ik moeite mee
+
+- Om na te gaan hoe de zijkanten van een kubus geplaatst moeten worden in 3D
+
+
+### Mislukte plannen
+
+- De blokken te animeren en te draaien op een hover, hier ga ik volegnde week mij meer in verdiepen.
 
 
 ## Week 2
@@ -93,15 +107,17 @@ Het is de week na de vakantie week 3. Ik ben weer verder gegaan met de kubus. Aa
 
 - Door het refactoren van de code kan ik nmu ook de zijkant draaien
 
+
 ### Waar had ik moeite mee
 
 - Het opnieuw schrijven van de code
 - Nieuwe dingen te bedenken om toe te voegen aan de kubus
+- een afbeelding op 1 van de zijdes van de kubus te krijgen
 
 
 ### Mislukte plannen
 
-- niks, gelukkig maar
+- De afbeelding mee te laten roteren met de kubus
 
 ## Week 4
 
