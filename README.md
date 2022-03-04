@@ -153,3 +153,9 @@ Het is de week na de vakantie week 3. Ik ben weer verder gegaan met de kubus. Aa
 
 ## Bronnen
 
+[nth of child generator](https://css-tricks.com/examples/nth-child-tester/)
+[css grid genrator](https://cssgrid-generator.netlify.app/)
+[Intro to 3D transforms](https://3dtransforms.desandro.com/cube)
+[coding a 3D pure css cube](https://dev.to/ziratsu/coding-a-3d-cube-in-pure-css-52gg)
+[codepen van Sanne](https://codepen.io/shooft)
+

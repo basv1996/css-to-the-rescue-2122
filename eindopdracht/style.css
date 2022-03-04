@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/* ~ selecteert het broertje of zusje na het element */
+
 :root * {
     --lengte: 6em;
     --rood: #b90000;
@@ -33,25 +35,6 @@ main input {
     position: relative;
     z-index: 99;
 }
-
-    /* Rotating animation */
-main input:first-of-type:checked~ul{
-    animation-play-state: running;
-}
-
-    /* Easy Mode */
-main input:nth-of-type(2):checked ~ ul li ul li::before 
-{
-        background-color: var(--blauw);
-    }
-
- /* Change lines to transparent (theme) */
-main input:nth-of-type(3):checked ~ ul li ul li{
-    background-color: #fff3;
-}
-
-
-
 
 /* Cube Container  */
 main > ul {
@@ -416,31 +399,110 @@ li:nth-of-type(1)::before {
 
 
 /* The buttons for the cube */
+/* Links Draaien naar boven toe */
+main input:nth-of-type(1):checked~ul li:nth-of-type(3n + 1) ul
+{    transform: rotateX(.25turn) rotateY(0) rotateZ(0); }
+/* Midden Draaien naar boven toe */
+main input:nth-of-type(2):checked~ul li:nth-of-type(3n + 2) ul
+{    transform: rotateX(.25turn) rotateY(0) rotateZ(0); }
+/* Rechts Draaien naar boven toe */
+main input:nth-of-type(3):checked~ul li:nth-of-type(3n +3) ul
+{    transform: rotateX(.25turn) rotateY(0turn) rotateZ(0turn);}
 
-/* main > ul:hover li:nth-of-type(-n +9) ul     */
+
+
+/* Naar Rechts draaien */
+/* Bovenste layer naar Rechts */
 main input:nth-of-type(4):checked~ul li:nth-of-type(-n +9) ul
-{
-	
-    transform: rotateX(0) rotateY(.25turn) rotateZ(0);
+{    transform: rotateX(0) rotateY(.25turn) rotateZ(0); }
+/* Middelste layer naar rechts */
+main input:nth-of-type(5):checked~ul li:nth-child(n+10):nth-child(-n+18) ul
+{    transform: rotateX(0) rotateY(.25turn) rotateZ(0); }
+/* onderste layer naar rechts */
+main input:nth-of-type(6):checked~ul li:nth-child(n+19):nth-child(-n+27) ul
+{    transform: rotateX(0) rotateY(.25turn) rotateZ(0); }
+
+/* Naar boven draaien */
+/* Rechterkant naar onder draaien */
+main input:nth-of-type(7):checked~ul li:nth-of-type(3n +3) ul
+{    transform: rotateX(-.25turn) rotateY(0turn) rotateZ(0turn);}
+/* MiddenLayer naar onder draaien */
+main input:nth-of-type(8):checked~ul li:nth-of-type(3n +2) ul
+{    transform: rotateX(-.25turn) rotateY(0turn) rotateZ(0turn);}
+/* Linkerkant naar onder draaien */
+main input:nth-of-type(9):checked~ul li:nth-of-type(3n +1) ul
+{    transform: rotateX(-.25turn) rotateY(0turn) rotateZ(0turn);}
+
+
+
+
+/* Naar links draaien */
+/* Onderste layer naar links */
+main input:nth-of-type(10):checked~ul li:nth-child(n+19):nth-child(-n+27) ul
+{    transform: rotateX(0) rotateY(-.25turn) rotateZ(0); }
+/* Middelste layer naar links */
+main input:nth-of-type(11):checked~ul li:nth-child(n+10):nth-child(-n+18) ul
+{    transform: rotateX(0) rotateY(-.25turn) rotateZ(0); }
+/* bovenste layer naar links */
+main input:nth-of-type(12):checked~ul li:nth-of-type(-n +9) ul
+{    transform: rotateX(0) rotateY(-.25turn) rotateZ(0); }
+
+
+/* Theme buttons */
+
+    /* Rotating animation */
+main input:nth-of-type(13):checked~ul{
+    animation-play-state: running;
 }
 
-
-main input:nth-of-type(5):checked~ul li:nth-of-type(-n +9) ul
+    /* Easy Mode */
+main input:nth-of-type(14):checked ~ ul li ul li::before 
 {
-	
-    transform: rotateX(0) rotateY(-.25turn) rotateZ(0);
+        background-color: var(--blauw);
+    }
+
+ /* Change lines to transparent (theme) */
+main input:nth-of-type(15):checked ~ ul li ul li{
+    background-color: #fff3;
 }
 
-main input:nth-of-type(6):checked~ul li:nth-of-type(3n +3) ul
-{
-	
-    transform: rotateX(.25turn) rotateY(0turn) rotateZ(0turn);
+main label:nth-of-type(n+13):nth-of-type(-n+16){
+    position: absolute;
+    /* top: 0; */
+    right: 1em; 
+    background-color: red;
+    padding: .5em 1em;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #eee;
+    border: 2px solid rgba(0, 60, 151, 0.667);
+    transition: 300ms;
+}
+
+main input:nth-of-type(n+13):nth-of-type(-n+16):checked ~ label{
+    background-color: #fff;
+    color: red;
+}
+
+main label:nth-of-type(n+13){
+    top: 5em;
+}
+
+main label:nth-of-type(n+14){
+    top: 9em;
+}
+
+main label:nth-of-type(n+15){
+    top: 13em;
+}
+
+main label:nth-of-type(n+16){
+    top: 18em;
 }
 
 
 
 /* Image background on one side */
-
 /* front and top layer */
 main ul li:nth-child(n+7):nth-child(-n+9) ul li:first-of-type::before,
 main ul li:nth-child(n+16):nth-child(-n+18) ul li:first-of-type::before,
@@ -449,8 +511,7 @@ main ul li:nth-child(n+25):nth-child(-n+27) ul li:first-of-type::before{
 }
 
 /* Afbeelding moet 3x zo groot zijn voor de kubus */
-
-main input:nth-of-type(7):checked~ ul > li > ul > li:first-of-type::before{
+main input:nth-of-type(16):checked~ ul > li > ul > li:first-of-type::before{
     background-image: url(assets/dogeCoin.jpg);
     background-size: calc(var(--lengte)*3) calc(var(--lengte)*3);
     /* background-position: center center; */
