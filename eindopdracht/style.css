@@ -3,10 +3,12 @@
     padding: 0;
 }
 
-/* ~ selecteert het broertje of zusje na het element */
+/* "~" Selector selecteert het broertje of zusje na het element (na deze is afgesloten)  */
+/* ">" Selector Selecteerd alle elementen die directe broertje of zusje zijn na het specifieke element*/
+/* "+" Selector Selecteerd het element direct achter het specifieke element*/
 
 :root * {
-    --lengte: 6em;
+    --lengte: 4em;
     --rood: #b90000;
     --blauw: #0045ad;
     --wit: #fff;
@@ -479,8 +481,8 @@ main label:nth-of-type(n+13):nth-of-type(-n+16){
     transition: 300ms;
 }
 
-main input:nth-of-type(n+13):nth-of-type(-n+16):checked ~ label{
-    background-color: #fff;
+main input:nth-of-type(n+13):checked + label
+{    background-color: #fff;
     color: red;
 }
 
@@ -609,3 +611,25 @@ section #right-top:checked ~ main ul li:nth-of-type(-n +9)
 	
     transform: rotateX(0) rotateY(.25turn) rotateZ(0);
 }
+
+
+@media only screen and (max-width: 750px) {
+    main label:nth-of-type(n+13){
+        top: 1em;
+        left: 5%;
+        max-width: 12vw;
+    }
+    main label:nth-of-type(n+14){
+        left: 30%;
+    }
+
+    main label:nth-of-type(n+15){
+        left: 55%;
+    }
+
+    main label:nth-of-type(n+16){
+        left: 80%;
+    }
+    
+    
+  }
