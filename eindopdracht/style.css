@@ -509,6 +509,7 @@ main label:nth-of-type(16){
 main label:nth-of-type(17){
     bottom: 1em;
     top: unset;
+    z-index: 99;
 }
 
 main input:nth-of-type(18):checked ~ ul
@@ -655,6 +656,12 @@ section #right-top:checked ~ main ul li:nth-of-type(-n +9)
 
     main label:nth-of-type(16){
         left: 80%;
+    }
+
+    main label:nth-of-type(18){
+        left: 1em;
+        bottom: 1em;
+        max-width: 12vw;
     }
     
     

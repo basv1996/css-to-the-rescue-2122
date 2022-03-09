@@ -11,7 +11,11 @@
 
 ### Het eindresultaat
 
-![Screenshot van de kubus]()
+![Screenshot van de kubus](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/eindresultaat.png)
+
+
+#### live link
+- [Link naar het eindresultaat](https://basv1996.github.io/css-to-the-rescue-2122/eindopdracht/)
 
 > Een kubus 
 
@@ -133,24 +137,25 @@ Het is de week na de vakantie week 3. Ik ben weer verder gegaan met de kubus. Aa
 
 ## Week 4
 
+week 4 is aangebroken en het zijn de laatste lootjes voor de eindoplevering. Ik heb wat extra thema's toegevoegd aan de kubus en mijn code gerefactord. 
+
 
 
 ### Wat ging goed
 
-- lorem
-- lorem
+- Het refactoren van de code
+- thema's toevoegen aan de kubus
 
 
 ### Waar had ik moeite mee
 
-- lorem
-- lorem
+- geen moeite ergens mee gehad, ik begrijp de technieken
 
 
 ### Mislukte plannen
 
-- lorem
-- lorem
+- Lasershow te laten werken alleen als de rotate aan staat.
+
 
 
 ## Credits
