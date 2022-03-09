@@ -47,6 +47,7 @@ Ik heb verschillende tips gekregen van Sanne voor het maken van de kubus:
 * 1 voor de middenstukken
 * 1 voor het midden midden
 * Custom Properties zijn je beste vriend 
+* repeating-radial-gradient
 
 
 ### Schetsen

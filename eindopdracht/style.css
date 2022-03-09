@@ -19,6 +19,18 @@
     --transform: rotateX(0) rotateY(var(--rY, 0deg)) rotateZ(0);
 }
 
+@keyframes spaceyBackground {
+    0% {
+        background-size: 100% 100%;
+    }
+    100% {
+        background-size: 200% 200%
+        /* calc(200% + var(--lengte) * 2) 
+        calc(200% + var(--lengte) * 2) */
+        ;
+    }
+}
+
 @keyframes draaien {
     0% {
       transform: none;
@@ -52,6 +64,43 @@ justify-items: center;
 align-items: center;
 }
 
+main form {
+    position: absolute;
+	bottom: 1em;
+	left: 1em;
+	width: 12vw;
+}
+
+main form label {
+        background-color: red;
+        padding: .5em 1em;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 4px 4px 4px #eee;
+        border: 2px solid rgba(0, 60, 151, 0.667);
+}
+
+main form:valid {
+	width: 100vw;
+	height: 100vh;
+	background: repeating-radial-gradient(var(--groen), var(--geel) 10%, var(--rood) 15%);
+    background-position: 50% 50%;
+	position: absolute;
+    animation: spaceyBackground linear 1s infinite alternate;
+	z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(0);
+}
+
+main form:valid label {
+    opacity: 0;
+
+}
+
+
 main input {
     opacity: 0;
 }
@@ -82,14 +131,10 @@ main label:nth-of-type(10) { grid-area: 4 / 1 / 5 / 2; }
 main label:nth-of-type(11) { grid-area: 3 / 1 / 4 / 2; }
 main label:nth-of-type(12) { grid-area: 2 / 1 / 3 / 2; }
 
-main label:nth-of-type(-n+12){
+main > label:nth-of-type(-n+12){
         font-size: 3em;
         font-weight: 700;
 }
-
-
-
-
 
 
 main input {
@@ -452,10 +497,12 @@ main input:nth-of-type(12):checked~ul li:nth-of-type(-n +9) ul
 
 
 /* Theme buttons */
-main label:nth-of-type(n+13){
+main label:nth-of-type(n+13), 
+/* main form label,  */
+main form:valid label {
     position: absolute;
     /* top: 0; */
-    right: 1em; 
+    right: 2em; 
     background-color: red;
     padding: .5em 1em;
     color: #fff;
@@ -584,6 +631,12 @@ main ul li:nth-child(27) ul li:first-of-type::before{
 
 
 @media only screen and (max-width: 750px) {
+
+    main form {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 1.5em;
+    }
     main label:nth-of-type(n+13):nth-of-type(-n+16) 
     {
         top: 1em;
