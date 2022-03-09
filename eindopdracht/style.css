@@ -450,6 +450,10 @@ li:nth-of-type(-n+6)::before {
 
 
 /* The buttons for the cube */
+main label:nth-of-type(-n+12) {
+    cursor: pointer;
+}
+
 /* Links Draaien naar boven toe */
 main input:nth-of-type(1):checked~ul li:nth-of-type(3n + 1) ul
 {    transform: rotateX(.25turn) rotateY(0) rotateZ(0); }
@@ -554,11 +558,12 @@ main label:nth-of-type(16){
 main label:nth-of-type(17){
     bottom: 1em;
     top: unset;
-    z-index: 99;
+    z-index: 9999;
 }
 
 main label:nth-of-type(18){
     position: absolute;
+    top: 23em;
 }
 
 main input:nth-of-type(18):checked ~ ul
