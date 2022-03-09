@@ -17,14 +17,12 @@
 #### live link
 - [Link naar het eindresultaat](https://basv1996.github.io/css-to-the-rescue-2122/eindopdracht/)
 
-> Een kubus 
-
 ### Opdracht
 
 - **Gekozen opdracht**: Rubik's Cube
 - **Grootste uitdaging**: Alles werkend krijgen met alleen CSS
 
-### Technieken
+### Nieuwe Technieken
 
 - Custom Properties
 - Transform/Animation
@@ -33,12 +31,6 @@
 - Grid
 - Checkbox interaction
 
-### Schetsen
-
-Aangezien ik niet een heel goed idee had hoe ik moest beginnen aan deze opdracht heb ik een schets gemaakt hoe ik mijn HTML wil gaan opbouwen. Om het semantisch correct te  houden heb ik ervoor gekozen om list items te gebruiken voor m'n kubus blokken.
-
-![Eerste afbeelding met schetsen](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Schets_week1.jpg)
-![Tweede afbeelding met schetsen](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Schets2_week1.jpg)
 
 ## Week 1
 
@@ -55,6 +47,14 @@ Ik heb verschillende tips gekregen van Sanne voor het maken van de kubus:
 * 1 voor de middenstukken
 * 1 voor het midden midden
 * Custom Properties zijn je beste vriend 
+
+
+### Schetsen
+
+Aangezien ik niet een heel goed idee had hoe ik moest beginnen aan deze opdracht heb ik een schets gemaakt hoe ik mijn HTML wil gaan opbouwen. Om het semantisch correct te  houden heb ik ervoor gekozen om list items te gebruiken voor m'n kubus blokken.
+
+![Eerste afbeelding met schetsen](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Schets_week1.jpg)
+![Tweede afbeelding met schetsen](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/Schets2_week1.jpg)
 
 
 ### Wat ging goed
