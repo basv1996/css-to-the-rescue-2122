@@ -139,7 +139,7 @@ Het is de week na de vakantie week 3. Ik ben weer verder gegaan met de kubus. Aa
 
 week 4 is aangebroken en het zijn de laatste lootjes voor de eindoplevering. Ik heb wat extra thema's toegevoegd aan de kubus en mijn code gerefactord. 
 
-
+![Screenshot van de kubus](https://raw.githubusercontent.com/basv1996/css-to-the-rescue-2122/main/docs/img/wiki_img/eindresultaat.png)
 
 ### Wat ging goed
 
